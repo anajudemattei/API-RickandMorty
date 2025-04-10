@@ -1,0 +1,28 @@
+.card {
+    width: 275px;
+    background-color: rgb(218, 255, 213);
+    padding: 1rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.25s;
+    overflow: hidden;
+    border: rgb(153, 255, 0) 3.5px solid;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.avatar {
+    width: 125;
+    border-radius: 50%;
+    width: 125px; 
+    height: 125px; 
+    object-fit: cover;
+    border: rgb(153, 255, 0) 3px solid;
+}
+
+.title {
+    margin: 10px 0 5px;
+    font-size: 20px;
+}
