@@ -1,28 +1,32 @@
 .card {
-    width: 275px;
-    background-color: rgb(218, 255, 213);
-    padding: 1rem;
-    border-radius: 15px;
+    width: 300px;
+    height: 430px;
+    padding: 1.5rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     text-align: center;
-    transition: transform 0.25s;
-    overflow: hidden;
-    border: rgb(153, 255, 0) 3.5px solid;
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.avatar {
-    width: 125;
-    border-radius: 50%;
-    width: 125px; 
-    height: 125px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: white;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  }
+  
+  .avatar {
     object-fit: cover;
-    border: rgb(153, 255, 0) 3px solid;
-}
-
-.title {
-    margin: 10px 0 5px;
-    font-size: 20px;
-}
+    border-radius: 50%;
+    border: 3px solid #00ff4c;
+    box-shadow: 0 0 12px rgba(0, 255, 81, 0.4);
+  }
+  
+  .title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  }
