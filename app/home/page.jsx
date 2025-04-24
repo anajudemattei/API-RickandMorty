@@ -69,7 +69,6 @@ export default function Home() {
             }
         }
 
-
         if (nextPageNumber <= total && !cache.has(nextCacheKey)) {
             try {
                 const res = await axios.get(`https://rickandmortyapi.com/api/character/?page=${nextPageNumber}&name=${name}`);
